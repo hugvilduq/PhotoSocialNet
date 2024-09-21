@@ -1,6 +1,6 @@
-# Proyecto-Curso-Hugvilduq
+# PhotoSocialNet
 
-# This is a RESTful API-based web project for a social media platform dedicated to photography. Users can share, like, and comment on photography posts, enhancing the community experience for photographers.
+This is a RESTful API-based web project for a social media platform dedicated to photography. Users can share, like, and comment on photography posts, enhancing the community experience for photographers.
 
 ## Demo
 
