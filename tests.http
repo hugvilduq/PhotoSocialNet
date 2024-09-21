@@ -1,0 +1,40 @@
+@BASE = http://127.0.0.1:8080/api/v1
+
+
+GET {{BASE}}/categories/photo/4
+###
+GET {{BASE}}/usersUsers/2/1
+
+###
+GET {{BASE}}/score/photos/2/1
+
+###
+
+POST {{BASE}}/comments
+Content-Type: application/json
+
+{   
+    "commentId":1,
+    "commentText": "No podia ser otra",
+    "userId": 1,
+    "photoId": 9
+}
+
+
+# El Post Login no funciona porque en el endpoint login, a pesar de coger usuario y contraseñas
+# me da password incorrecta
+###
+POST {{BASE}}/categoriesPhotos
+Content-Type: application/json
+
+{   
+    "categoryId":9,
+    "photoId": 28
+}
+###
+DELETE {{BASE}}/categoriesPhotos/5/25
+
+###
+GET {{BASE}}/usersUsers/2/1
+
+###
