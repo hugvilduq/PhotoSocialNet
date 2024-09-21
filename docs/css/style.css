@@ -1,0 +1,150 @@
+
+body {
+	background: #181b1d;
+	text-align: center;
+	color: #fff;
+	font-family:  'Trebuchet MS', 'Calibri',  'sans-serif';
+	padding-bottom: 70px;
+	zoom: 80%;
+}
+hr{
+	border-color: #99aab5;
+}
+.logo{
+	width:50px;
+	height: auto;
+}
+.title{
+	font-size: 4em;
+	margin:25px;
+
+	}
+.subtitle{
+	font-size: 2.5em;
+	color:#bdbdbd;
+	margin:25px;
+}
+.comment-list{
+	text-align: left;
+}
+
+.form-control{
+	height:3em;
+	font-size: larger;
+}
+
+.form-submit{
+	font-size: 30px;
+}
+.category-button{
+	width: 100%;
+	text-align: left;
+	font-size: 2em;
+}
+.card-body{
+	position:static ;
+	padding-top:auto;
+	margin-bottom: 0em;
+}
+.img-fluid-card-image{
+	object-fit:cover; 
+	width: 100%;
+  	height:250px;
+}
+.simg{
+	cursor: zoom-in;
+ }
+.card-dark {
+    height: 100%;
+} 
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+.fit-content{
+	width:fit-content;
+}
+.login-field{
+	width: 550px;
+	align-self: center;
+}
+
+.user-card-img{
+	object-fit:cover; 
+	width: 250px;
+  	height:250px;
+	border-radius: 50%;
+}
+.display-inline-block{
+	display: inline-block;
+}
+.comment-title{
+	margin-top: 2.5%;
+}
+.user-comment-img{
+	object-fit:cover; 
+	width: 30px;
+  	height:30px;
+	border-radius: 50%;
+}
+.user-card-text{
+	text-align: left;
+	margin-top: 3.5%;
+	margin-left: 2%;
+}
+.small-margin-top{
+	margin-top: 5%;
+}
+.comment-author{
+	font-size: 120%;
+	font-weight: lighter;
+}
+.rate-form{
+	margin-top: 5%;
+}
+.box-title{
+	text-align:left ;
+	font-weight:300px;
+	padding-top:18% ;
+	padding-left: 5%;
+}
+.post-photo{
+	font-size: 50px;
+	margin-bottom: 4%;
+}
+.col-lg-4{
+	padding-bottom: 25px;
+}
+
+footer{
+	text-align: left;
+	position: absolute  ;
+    bottom:0;
+	width: 120%;
+	margin-left: -1em;
+	
+}
+.add-category-select{
+	background-image:
+	  linear-gradient(45deg, transparent 50%, gray 50%),
+	  linear-gradient(135deg, gray 50%, transparent 50%),
+	  linear-gradient(to right, #ccc, #ccc);
+	background-position:
+	  calc(100% - 20px) calc(1em + 2px),
+	  calc(100% - 15px) calc(1em + 2px),
+	  calc(100% - 2.5em) 0.5em;
+	background-size:
+	  5px 5px,
+	  5px 5px,
+	  1px 1.5em;
+	background-repeat: no-repeat;
+	width: 500px;
+  }
+
+.available-categories{
+	height: fit-content;
+	width: 500px;
+}
+.margin-left{
+	margin-left:5%;
+}

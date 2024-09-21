@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Post Photo</title>
+        
+        <link rel="icon" type="image/ico" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="/js/libs/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/libs/popper.min.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+
+        <script src="js/libs/mp/dist/jquery.magnific-popup.min.js"></script>
+        <script src="js/utils/include.js"></script>
+        <script type="module" src="js/header.js"></script>
+        <script type="module" src="/js/edit_photo.js"></script>
+        <script src="/js/libs/axios.min.js"></script>
+      </head>
+    
+      
+    <body>
+      <div id="header"></div>
+      
+      <h1 id="title" class="title">Post photo</h1>
+      <h3 id="subtitle" class="subtitle">Spread your love out there</h3>
+      <div class="container">
+        <div id="errors"></div>
+        <div class="row text-center">
+          <div class="col-lg-7">
+            <form id="form-photo-upload">
+              <div class="form-group">
+                <input id="input-url" class="form-control login-field text-light bg-dark" type="text" placeholder="Paste your image URL here"name="photoUrl">
+              </div>
+              <div class="form-group">
+                <input id="input-title" class="form-control login-field text-light bg-dark" type="text" placeholder="Add an interesting title"name="title">
+              </div>
+              <div class="form-group">
+                <input id="input-description" class="form-control login-field text-light bg-dark" type="text" placeholder="Add your text..."name="description">
+              </div>
+              <div class="form-group">
+                <label for="select-visibility">Visibility:</label>
+                <select id="input-visibility" class="btn-secondary" name="visibility">
+                  <option value="PUBLIC">Public</option>
+                  <option value="PRIVATE">Private</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="form-submit btn btn-success">Publish</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-5">
+              <div id="photo_details">
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+<div id="footer"></div>
+      <script>
+        include("header.html","#header");
+        include("footer.html","#footer");
+      </script>
+    </body>
+</html>

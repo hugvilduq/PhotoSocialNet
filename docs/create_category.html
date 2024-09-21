@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Create category</title>
+        
+        <link rel="icon" type="image/ico" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="/js/libs/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/libs/popper.min.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+
+        <script src="js/libs/mp/dist/jquery.magnific-popup.min.js"></script>
+        <script src="js/utils/include.js"></script>
+        <script type="module" src="js/header.js"></script>
+        <script type="module" src="/js/create_category.js"></script>
+        <script src="/js/libs/axios.min.js"></script>
+        
+      </head>
+    
+      
+    <body>
+      <div id="header"></div>
+      <div id="errors"></div>
+      <h1 class="title">Create category</h1>
+      <h3 class="subtitle">A whole new concept</h3>
+
+      <div class="container fit-content">
+
+        <form id="id-create-category-form">
+          <div class="form-group text-center">
+            <input class="text-center form-control login-field text-light bg-dark" type="text" Placeholder="Type a #NewCategory" name="categoryName" id="category-input">
+          </div>
+          <div class="form-group">
+            <button type="submit" class="form-submit btn btn-success">Create category</button>
+            <button id="finish-btn" class="form-submit btn text-warning border-warning btn-dark">Finish</button>
+          </div>
+        </form>
+
+      </div>
+      </body>
+      <br>
+      <div>
+        <h3>Current available categories:</h3>
+        <p id="current-categories" class="available-categories custom-select multiple form-select-lg text-light bg-dark" ></p>
+      </div>
+      <div id="footer"></div>
+      <script>
+        include("header.html","#header");
+        include("footer.html","#footer");
+
+      </script>
+    </body>
+</html>

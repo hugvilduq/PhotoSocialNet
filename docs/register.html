@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Register</title>
+        
+        <link rel="icon" type="image/ico" href="images/favicon.ico">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="/js/libs/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/libs/popper.min.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/libs/mp/dist/jquery.magnific-popup.min.js"></script>
+        <script src="js/utils/include.js"></script>
+        <script type="module" src="js/header.js"></script>
+        <script src="/js/register.js" type="module"></script>
+        <script src="/js/libs/axios.min.js"></script>
+      </head>
+    
+      
+    <body>
+      <div id="header"></div>
+      <h1 class="title">Register</h1>
+      <h3 class="subtitle">We're pleased to welcome you</h3>
+      <div class="container">
+        <div id="errors"></div>
+        <div class="row text-center">
+        <div class="col-md-6" >
+        <form id="register-form">
+            <h4>Personal data</h4>
+            <div class="form-group">
+              <input class="form-control text-light bg-dark" type="text" placeholder="First name" name="firstName" id="firstname-input">
+            </div>
+            <div class="form-group">
+              <input class="form-control text-light bg-dark" type="text" placeholder="Last Name" name="lastName" id="lastname-input">
+            </div>
+            <div class="form-group ">
+              <input class="form-control text-light bg-dark" type="email" placeholder="Email"name="email" id="email-input">
+            </div>
+            <div class="form-group">
+              <input class="form-control text-light bg-dark" type="text"placeholder="Phone Number" name="telephone" id="phone-input">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4>User data</h4>
+            <div class="form-group">
+              <input class="form-control text-light bg-dark" type="text" placeholder="Username"name="username" id="username-input">
+            </div>
+            <div class="form-group">
+              <input class="form-control text-light bg-dark" type="password" Placeholder="Password" name="password" id="password1-input">
+            </div>
+            <div class="form-group">
+              <input class="form-control text-light bg-dark" type="password" Placeholder="Repeat your password" name="password2" id="password2-input">
+            </div>
+          </div>
+      
+    </div>
+    </div>
+      <div>
+          <div class="form-group">
+            <button type="submit" class="form-submit btn btn-success">Create your account</button>
+          </div>
+    </form>
+          <span>Already have an account?</span>
+          <a class="btn btn-primary rounded" href="login.html">Login</a>
+      </div>
+<div id="footer"></div>
+      <script>
+        include("header.html","#header");
+        include("footer.html","#footer");
+      </script>
+
+    </body>
+</html>

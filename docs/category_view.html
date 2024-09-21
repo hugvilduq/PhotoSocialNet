@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>User view</title>
+        <link rel="icon" type="image/ico" href="images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="/js/libs/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/libs/popper.min.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="js\libs\mp\dist\magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="js/libs/mp/dist/jquery.magnific-popup.min.js"></script>
+        
+        <script src="js/utils/include.js"></script>
+        
+        <script type="module" src="/js/category_view.js"></script>
+        <script type="module" src="js/header.js"></script>
+        <script type="module" src="js/libs/mp_zoom.js"></script>
+        
+        <script src="/js/libs/axios.min.js"></script>
+      </head>
+      
+      
+      <body>
+        
+     <div id="header"></div>
+      <p></p> 
+      <div class="container">
+        <div id="errors"></div>
+        <div class="card-dark mb-3 title" id="title" >
+        </div>
+        <div class="row text-center card-deck">
+          <div class="gallery row">
+          </div>
+        </div>
+      </div>
+
+      <div id="footer"></div>
+
+       <script>
+        include("header.html","#header");
+        include("footer.html","#footer");
+      </script>
+      
+  </body>
+</html>

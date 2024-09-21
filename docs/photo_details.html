@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Photo details</title>
+        <link rel="icon" type="image/ico" href="images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="/js/libs/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/libs/popper.min.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="js\libs\mp\dist\magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="js/libs/mp/dist/jquery.magnific-popup.min.js"></script>
+        
+        <script src="js/utils/include.js"></script>
+        <script type="module" src="js/header.js"></script>
+        <script type="module" src="/js/photo_details.js"></script>
+        <script src="/js/libs/axios.min.js"></script>
+        <script type="module" src="/js/libs/mp_zoom.js"></script>
+    </head>
+
+      
+    <body>
+      <div id="header"></div>
+      <div class="container">
+        <div id="errors"></div>
+        <div class="row text-center">
+          <div class="col-md-5">
+            <div id="photo_details">
+            </div>
+            <div id="actions-col">
+              <p>
+                <button id="button-add-categories" class="btn btn-primary">Add Categories</button> 
+                <button id="button-remove-categories" class="btn text-primary btn-dark border-primary">Remove Categories</button> 
+              </p>
+              <p>
+                <button id="button-edit" class="btn btn-warning" >Edit Photo</button> 
+                <button id="button-delete" class="btn btn-danger">Delete Photo</button>
+              </p>
+            </div>  
+            <div id="action-rating">
+              <form id="id-rating-form">
+                <div class="form-group rate-form">
+                  <div id="current-score">
+                  </div>
+                  <label for="select-stars">Rate: </label>
+                  <select name="score" id="select-stars" class="btn-secondary">
+                    <option disabled selected value>Select</option>
+                    <option value="1">★☆☆☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="5">★★★★★</option>
+                  </select>
+                  <button class="btn btn-primary" type="submit">Save</button>
+                </div>
+              </form>
+            </div>
+        </div>
+          
+        <div class="col-md">
+          <h3 class="comment-title">Comments</h3>
+          <hr>
+          <div class="comment-list">
+            <ul class="list-group">
+              <div id="published-comments">
+              </div>
+            </ul>
+            <div id="action-comment"></div>
+              <form id="id-comment-form">
+              <div class="form-group">
+                <input class="form-control comment-form text-light bg-dark" type="text" rows="4" placeholder="Add a public comment..." name="commentText" id="comment-input">
+              </div>
+              <button class="btn btn-primary" type="submit">Post</button>
+            </form>
+            </div>
+        </div>
+      </div>
+      </div>
+      </div>
+<div id="footer"></div>
+        
+      
+
+      <script>
+        include("header.html","#header");
+        include("footer.html","#footer");
+      </script>
+    
+  </body>
+</html>

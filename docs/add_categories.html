@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Add categories</title>
+        <link rel="icon" type="image/ico" href="images/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="/js/libs/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/libs/popper.min.js"></script>
+        <script src="js/libs/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="js\libs\mp\dist\magnific-popup.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="js/libs/mp/dist/jquery.magnific-popup.min.js"></script>
+        
+        <script src="js/utils/include.js"></script>
+        <script type="module" src="js/header.js"></script>
+        <script type="module" src="/js/add_categories.js"></script>
+        <script src="/js/libs/axios.min.js"></script>
+        <script type="module" src="/js/libs/mp_zoom.js"></script>
+    </head>
+
+      
+    <body>
+      <div id="header"></div>
+      <h1 class="title">Add Categories</h1>
+      <h3 class="subtitle">Help others find your work</h3>
+      <div class="container">
+        <div id="errors"></div>
+        <div class="row text-center">
+          <div class="col-lg-7 text-center">
+            <div class="form-group">
+              <form id="category-form">
+              <h6>Select a category to add to your photo</h6>
+                <select id="input-categories" class="add-category-select custom-select multiple form-select-lg text-light bg-dark" name="categoryId">
+                  <option disabled selected value>Select category</option>
+                </select>
+                <p><h8 class="create-category-prompt">Can't find the #Category you want? <a class="btn btn-success" href="create_category.html">Create one</a></h8></p>
+              <div class="form-group">
+                <p>
+                <button type="submit" class="form-submit btn btn-primary">Add category</button>
+                <button id="finish-btn" class="form-submit btn btn-success">Finish</button>
+              </p>
+              </div>
+              </form>
+              </div>
+              <div>
+                <h3>Current categories in your photo:</h3>
+                <p id="current-categories" class="available-categories custom-select multiple form-select-lg text-light bg-dark" ></p>
+              </div>
+          </div>
+          <div class="col-lg-5">
+            <div id="photo_details">
+            </div>
+          </div>
+        </div>
+
+        </div>
+        </div>
+      </div>
+<div id="footer"></div>
+        
+      
+
+      <script>
+        include("header.html","#header");
+        include("footer.html","#footer");
+      </script>
+    
+  </body>
+</html>
