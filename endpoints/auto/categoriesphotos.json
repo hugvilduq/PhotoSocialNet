@@ -1,0 +1,60 @@
+{
+    "getAll": {
+        "description": "Gets all entries from 'categoriesphotos'",
+        "route": "/categoriesphotos",
+        "method": "GET",
+        "sql": "SELECT * FROM categoriesphotos",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "getById": {
+        "description": "Gets an entry from 'categoriesphotos' by its primary key",
+        "route": "/categoriesphotos/$categoryPhotoId",
+        "method": "GET",
+        "sql": "SELECT * FROM categoriesphotos WHERE categoryPhotoId = $categoryPhotoId",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "create": {
+        "description": "Creates a new entry in 'categoriesphotos'",
+        "route": "/categoriesphotos",
+        "method": "POST",
+        "sql": "INSERT INTO categoriesphotos (categoryId, photoId) VALUES ($categoryId, $photoId)",
+        "request_body_params": [
+            "categoryId",
+            "photoId"
+        ],
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "update": {
+        "description": "Updates an existing entry in 'categoriesphotos' by its primary key",
+        "route": "/categoriesphotos/$categoryPhotoId",
+        "method": "PUT",
+        "sql": "UPDATE categoriesphotos SET categoryId = $categoryId, photoId = $photoId WHERE categoryPhotoId = $categoryPhotoId",
+        "request_body_params": [
+            "categoryId",
+            "photoId"
+        ],
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "delete": {
+        "description": "Deletes an existing entry in 'categoriesphotos' by its primary key",
+        "route": "/categoriesphotos/$categoryPhotoId",
+        "method": "DELETE",
+        "sql": "DELETE FROM categoriesphotos WHERE categoryPhotoId = $categoryPhotoId",
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ]
+    }
+}

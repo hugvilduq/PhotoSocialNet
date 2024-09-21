@@ -1,0 +1,60 @@
+{
+    "getAll": {
+        "description": "Gets all entries from 'usersusers'",
+        "route": "/usersusers",
+        "method": "GET",
+        "sql": "SELECT * FROM usersusers",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "getById": {
+        "description": "Gets an entry from 'usersusers' by its primary key",
+        "route": "/usersusers/$userUserId",
+        "method": "GET",
+        "sql": "SELECT * FROM usersusers WHERE userUserId = $userUserId",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "create": {
+        "description": "Creates a new entry in 'usersusers'",
+        "route": "/usersusers",
+        "method": "POST",
+        "sql": "INSERT INTO usersusers (userFollowsId, userFollowedById) VALUES ($userFollowsId, $userFollowedById)",
+        "request_body_params": [
+            "userFollowsId",
+            "userFollowedById"
+        ],
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "update": {
+        "description": "Updates an existing entry in 'usersusers' by its primary key",
+        "route": "/usersusers/$userUserId",
+        "method": "PUT",
+        "sql": "UPDATE usersusers SET userFollowsId = $userFollowsId, userFollowedById = $userFollowedById WHERE userUserId = $userUserId",
+        "request_body_params": [
+            "userFollowsId",
+            "userFollowedById"
+        ],
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "delete": {
+        "description": "Deletes an existing entry in 'usersusers' by its primary key",
+        "route": "/usersusers/$userUserId",
+        "method": "DELETE",
+        "sql": "DELETE FROM usersusers WHERE userUserId = $userUserId",
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ]
+    }
+}

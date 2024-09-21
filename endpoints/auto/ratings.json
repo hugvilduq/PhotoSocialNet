@@ -1,0 +1,64 @@
+{
+    "getAll": {
+        "description": "Gets all entries from 'ratings'",
+        "route": "/ratings",
+        "method": "GET",
+        "sql": "SELECT * FROM ratings",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "getById": {
+        "description": "Gets an entry from 'ratings' by its primary key",
+        "route": "/ratings/$ratingId",
+        "method": "GET",
+        "sql": "SELECT * FROM ratings WHERE ratingId = $ratingId",
+        "auth_required": false,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "create": {
+        "description": "Creates a new entry in 'ratings'",
+        "route": "/ratings",
+        "method": "POST",
+        "sql": "INSERT INTO ratings (ratingDate, score, userId, photoId) VALUES ($ratingDate, $score, $userId, $photoId)",
+        "request_body_params": [
+            "ratingDate",
+            "score",
+            "userId",
+            "photoId"
+        ],
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "update": {
+        "description": "Updates an existing entry in 'ratings' by its primary key",
+        "route": "/ratings/$ratingId",
+        "method": "PUT",
+        "sql": "UPDATE ratings SET ratingDate = $ratingDate, score = $score, userId = $userId, photoId = $photoId WHERE ratingId = $ratingId",
+        "request_body_params": [
+            "ratingDate",
+            "score",
+            "userId",
+            "photoId"
+        ],
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ]
+    },
+    "delete": {
+        "description": "Deletes an existing entry in 'ratings' by its primary key",
+        "route": "/ratings/$ratingId",
+        "method": "DELETE",
+        "sql": "DELETE FROM ratings WHERE ratingId = $ratingId",
+        "auth_required": true,
+        "allowed_roles": [
+            "*"
+        ]
+    }
+}
