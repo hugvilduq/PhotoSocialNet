@@ -4,7 +4,7 @@ This is a RESTful API-based web project for a social media platform dedicated to
 
 ## Demo
 
-You can check out the demo of the project in Spanish [here](https://www.youtube.com/watch?v=C4G38xzAJ0Y).
+You can check out the demo of the project in Spanish [here](https://www.youtube.com/watch?v=C4G38xzAJ0Y). 
 
 ## Features
 
